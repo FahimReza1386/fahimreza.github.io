@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProject</title>
+    <link rel="stylesheet" href="File/css/style.css">
+    <script src="https://kit.fontawesome.com/e5c15ef425.js" crossorigin="anonymous"></script></head>
+<body>
+    <div id="Header">
+        <div class="Container">
+            <nav>
+                <img src="File/img/logo3.png" alt="Logo">
+                <ul id="SideMenu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="CloseMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="OpenMenu()"></i>
+            </nav>
+            <div class="Header-Text">
+                <p>Web Developer</p>
+                <h1>Hi , I'm <span>FahimReza</span> <br>From Iran</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ---------------About--------------- -->
+    
+    <div id="About">
+        <div class="Container">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="File/img/Selfi.jpg" alt="About img">
+                </div>
+                <div class="About-col-2">
+                    <h1 class="sub-Title">About Me</h1>
+                    <hr>
+                    <h1 class="sub-Title" style="direction: rtl;">درباره ما</h1>
+                    <br/>
+                    <p class="Bio">Hello, my name is Fahim Reza Hosseini, I was born in Iran in 1386 and I am from Fars province. I have started programming since 1399
+                        .And that I love programming and I would like to continue this passionate and motivating job until the end of my life.In these few years, I got very tired and withdrew,
+                         but I came back with the interest I had to make this and that now I have reached a place where I will not withdraw anymore and I will continue no matter what happens.</p>
+                        <br/>
+                         <hr>
+                    <br/>
+                    <p style="direction: rtl;">سلام من فهیم رضا حسینی متولد 1386 و اهل استان فارس هستم. من از سال 1399 برنامه نویسی را شروع کردم و اینکه عاشق برنامه نویسی هستم و دوست دارم این کار پرشور و انگیزه را تا آخر عمرم ادامه دهم. 
+                        در این چند سال خیلی خسته شدم و کنار رفتم اما با علاقه برگشتم.
+                         مجبور شدم این و آن را بسازم حالا به جایی رسیده ام که دیگر کنار نخواهم رفت و هر اتفاقی هم بیفتد ادامه خواهم داد.</p>
+                    <div class="Tab-Titles">
+                        <p class="Tab-Links Active-Link" onclick="OpenTab('Skills')">Skills</p>
+                        <p class="Tab-Links " onclick="OpenTab('Experience')">Experience</p>
+                        <p class="Tab-Links" onclick="OpenTab('Education')">Education</p>
+                    </div>
+                    <div class="Tab-Contents Active-Tab" id="Skills">
+                        <ul>
+                            <li><span>U/Ux</span><br>Designer Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Web App interfaces</li>
+                            <li><span>App Developer</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="Tab-Contents" id="Experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Ui/Ux Design Traning at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team load at StartApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>Ui/Ux Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="Tab-Contents" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>Ui/Ux Design Traning at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------Services--------------- -->
+
+    <div id="Services">
+        <div class="Container">
+            <h1 class="sub-Title">My Services</h1>
+            <div class="Services-List">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                         euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                    <a href="#">Learn More</a>    
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Ui/Ux Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                         euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                    <a href="#">Learn More</a>    
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                         euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                    <a href="#">Learn More</a>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Portfolio" id="Portfolio">
+        <div class="Container">
+            <h1 class="sub-Title">My Work</h1>
+            <div class="Work-List">
+                <div class="Work">
+                    <img src="File/img/work-1.png">
+                    <div class="Layer">
+                        <h3>Social Media App</h3>
+                        <p>The App Connects You yo the talended people around the worlds.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>                    
+                </div>
+                <div class="Work">
+                    <img src="File/img/work-2.png">
+                    <div class="Layer">
+                        <h3>Music App</h3>
+                        <p>The App Connects You yo the talended people around the worlds.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div> 
+                </div>
+                <div class="Work">
+                    <img src="File/img/work-3.png">
+                    <div class="Layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The App Connects You yo the talended people around the worlds.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div> 
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------------Contact--------------- -->
+
+    <div id="Contact">
+        <div class="Container">
+            <div class="row">
+                <div class="Contact-Left">
+                    <h1 class="sub-Title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>FahimReza20200@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0912xxxxxxx</p>
+                    <div class="Social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="File/img/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="Contact-Right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                        <a href="" class="btn btn2">Submit</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="CopyRight">
+            <h1>All rights of this site belong to <span>Fahim Reza</span></h1>
+        </div>
+    </div>
+
+
+    <script src="File/js/script.js"></script>
+</body>
+</html>
